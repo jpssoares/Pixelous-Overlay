@@ -1,6 +1,7 @@
 # Pixelous Overlay
 ![Pixelous](./assets/icon/icon_256x256x32.png)
- OBS overlay created using Pygame that displays each follower/subsciber as a character on the bottom of the screen.
+
+OBS overlay created using Pygame that displays each follower/subsciber as a character on the bottom of the screen.
 
 <!-- Add gif of demo here -->
 <!-- ![Demo](./assets/demo.gif) -->

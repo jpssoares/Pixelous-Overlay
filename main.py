@@ -21,7 +21,7 @@ BLACK = (50,50,50)
 WHITE = (255, 255, 255)
 
 def random_start_coordinates():
-    return random.randint(0, SCREEN_SIZE[0])
+    return random.randint(10, SCREEN_SIZE[0]-10)
 
 def draw_text(character):
     # create a text surface object,
@@ -42,7 +42,7 @@ if __name__ == '__main__':
     pygame.display.set_icon(logo)
     pygame.display.set_caption('Pixelous')
     font = pygame.font.SysFont(fontname, 12)
-    screen = pygame.display.set_mode(SCREEN_SIZE)
+    screen = pygame.display.set_mode(SCREEN_SIZE, pygame.NOFRAME)
     screen_border = pygame.Rect(*screen.get_rect().center, 0, 0).inflate(SCREEN_SIZE)
     center_of_screen = screen.get_rect().center
 

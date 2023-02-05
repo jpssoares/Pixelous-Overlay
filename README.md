@@ -3,6 +3,8 @@
 
 OBS overlay created using Pygame that displays each follower/subsciber as a character on the bottom of the screen.
 
+https://user-images.githubusercontent.com/57997233/216832032-8c9da511-85d2-495a-ba2f-3aa4b058aef7.mov
+
 <!-- Add gif of demo here -->
 <!-- ![Demo](./assets/demo.gif) -->
 

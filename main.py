@@ -17,8 +17,9 @@ main_monitor = monitors[0]
 SCREEN_SIZE = (main_monitor.width, main_monitor.height/4)
 
 # COLORS
-BLACK = (50,50,50)
+DARK_GREY = (50,50,50)
 WHITE = (255, 255, 255)
+CHROMA_KEY_GREEN = (96, 254, 1)
 
 def random_start_coordinates():
     return random.randint(10, SCREEN_SIZE[0]-10)
@@ -32,7 +33,7 @@ def draw_text(character):
     textRect = text.get_rect()
 
     # set the center of the rectangular object.
-    textRect.center = (character.player_x + character.player_image_size[0]//2, character.player_y-10)
+    textRect.center = (character.player_x + character.player_image_size[0]//2, character.player_y-14)
     screen.blit(text, textRect)
 
 if __name__ == '__main__':
@@ -41,7 +42,7 @@ if __name__ == '__main__':
     logo = pygame.image.load("./assets/icon/icon_1024x1024x32.png")
     pygame.display.set_icon(logo)
     pygame.display.set_caption('Pixelous')
-    font = pygame.font.SysFont(fontname, 12)
+    font = pygame.font.SysFont(fontname, 15, True)
     screen = pygame.display.set_mode(SCREEN_SIZE, pygame.NOFRAME)
     screen_border = pygame.Rect(*screen.get_rect().center, 0, 0).inflate(SCREEN_SIZE)
     center_of_screen = screen.get_rect().center
@@ -69,7 +70,7 @@ if __name__ == '__main__':
     running = True
     while running:
     # game loop
-        screen.fill(BLACK) # draw a black screen
+        screen.fill(CHROMA_KEY_GREEN)
         
         # update player animation cycle
         for character in characters:

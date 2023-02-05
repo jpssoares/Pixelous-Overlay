@@ -23,10 +23,12 @@ class Animation():
 
 class Character():
     def __init__(self, player_x, player_y, name, foldername = None, image_suffix = None):
+
         if foldername == None:
-            foldername = 'character01'
+            foldername =random.choice(['doux','vita','tard','mort'])
+            
         if image_suffix == None:
-            image_suffix = 'vita_'
+            image_suffix = foldername + '_'
 
         self.name = name
         self.player_image = pygame.image.load(f'assets/{foldername}/{image_suffix}00.png')

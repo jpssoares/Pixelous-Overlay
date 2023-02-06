@@ -31,7 +31,7 @@ class Character():
             image_suffix = foldername + '_'
 
         self.name = name
-        self.player_image = pygame.image.load(f'assets/{foldername}/{image_suffix}00.png')
+        self.player_image = pygame.image.load(f'assets/characters/{foldername}/{image_suffix}00.png')
         self.player_image_size = (45,51)
         self.player_x = player_x
         self.player_y = player_y
@@ -42,18 +42,18 @@ class Character():
         self.player_timestamp = int(time())
         self.player_animation = {
             'idle' : Animation([
-                pygame.image.load(f'assets/{foldername}/{image_suffix}00.png'),
-                pygame.image.load(f'assets/{foldername}/{image_suffix}01.png'),
-                pygame.image.load(f'assets/{foldername}/{image_suffix}02.png'),
-                pygame.image.load(f'assets/{foldername}/{image_suffix}03.png')
+                pygame.image.load(f'assets/characters/{foldername}/{image_suffix}00.png'),
+                pygame.image.load(f'assets/characters/{foldername}/{image_suffix}01.png'),
+                pygame.image.load(f'assets/characters/{foldername}/{image_suffix}02.png'),
+                pygame.image.load(f'assets/characters/{foldername}/{image_suffix}03.png')
             ]),
             'walking' : Animation([
-                pygame.image.load(f'assets/{foldername}/{image_suffix}04.png'),
-                pygame.image.load(f'assets/{foldername}/{image_suffix}05.png'),
-                pygame.image.load(f'assets/{foldername}/{image_suffix}06.png'),
-                pygame.image.load(f'assets/{foldername}/{image_suffix}07.png'),
-                pygame.image.load(f'assets/{foldername}/{image_suffix}08.png'),
-                pygame.image.load(f'assets/{foldername}/{image_suffix}09.png')
+                pygame.image.load(f'assets/characters/{foldername}/{image_suffix}04.png'),
+                pygame.image.load(f'assets/characters/{foldername}/{image_suffix}05.png'),
+                pygame.image.load(f'assets/characters/{foldername}/{image_suffix}06.png'),
+                pygame.image.load(f'assets/characters/{foldername}/{image_suffix}07.png'),
+                pygame.image.load(f'assets/characters/{foldername}/{image_suffix}08.png'),
+                pygame.image.load(f'assets/characters/{foldername}/{image_suffix}09.png')
             ])
         }
 
